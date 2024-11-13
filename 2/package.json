@@ -1,0 +1,31 @@
+{
+  "name": "tmp-node-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "stop": "exit 0",
+    "build": "tsc",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "coverage": "jest --coverage --reporters=jest-junit --coverageDirectory=.",
+    "pretest": "npm run build",
+    "posttest": "exit 0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^29.5.5",
+    "@types/node": "^20.14.10",
+    "@typescript-eslint/eslint-plugin": "^7.15.0",
+    "@typescript-eslint/parser": "^7.15.0",
+    "eslint": "^8.57.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "jest": "^29.7.0",
+    "jest-junit": "^16.0.0",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.5.3"
+  }
+}
