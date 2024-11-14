@@ -1,0 +1,32 @@
+{
+  "name": "tmp-node-7",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "npx tsx watch src/server.ts",
+    "stop": "taskkill /F /IM node.exe"
+  },
+  "type": "module",
+  "keywords": [
+    "NodeJS"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/mongoose": "^5.11.97",
+    "@types/node": "^20.12.2",
+    "nodemon": "^3.1.0",
+    "pm2": "^5.3.1",
+    "tsx": "^4.7.1",
+    "typescript": "^5.4.3"
+  },
+  "dependencies": {
+    "csvtojson": "^2.0.10",
+    "express": "^4.19.2",
+    "joi": "^17.12.2",
+    "mongoose": "^8.3.1",
+    "uuid": "^9.0.1"
+  }
+}

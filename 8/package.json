@@ -1,0 +1,48 @@
+{
+  "name": "tmp-node-8",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "npx tsx watch src/server.ts",
+    "stop": "taskkill /F /IM node.exe"
+  },
+  "keywords": [
+    "NodeJS"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/mongoose": "^5.11.97",
+    "@types/node": "^20.12.2",
+    "@types/uuid": "^9.0.8",
+    "nodemon": "^3.1.0",
+    "pm2": "^5.3.1",
+    "tsx": "^4.7.1",
+    "typescript": "^5.4.3"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^8.4.1",
+    "@mikro-orm/cli": "^6.2.3",
+    "@mikro-orm/core": "^6.2.3",
+    "@mikro-orm/migrations": "^6.2.3",
+    "@mikro-orm/postgresql": "^6.2.3",
+    "@mikro-orm/reflection": "^6.2.3",
+    "@mikro-orm/seeder": "^6.2.3",
+    "csvtojson": "^2.0.10",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "joi": "^17.12.2",
+    "mongoose": "^8.3.1",
+    "ts-node": "^10.9.2",
+    "uuid": "^9.0.1"
+  },
+  "mikro-orm": {
+    "useTsNode": true,
+    "configPaths": [
+      "./src/postgresql/orm.config.ts",
+      "./dist/config/orm.config.js"
+    ]
+  }
+}
